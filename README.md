@@ -1,19 +1,19 @@
 
-# Linear Grapher
+# Graph man
 
 17/11/2021
 
-- xxx
-- xxx1
-- xxx2
+- Amritpal Singh
+- Jagraj Singh
+- Manraj Singh
 
 ## Problem Definition
 
-Design a program to represent linear equations in the form of a Graph. The input is provided in the command line or csv file depending upon the need. Format - ax + by = c. Support for basic trigonometric functions such as sin(), cos() and tan(). Multiple equations should be supported.
+Design a program to represent linear and quadratic equations in the form of a Graph. The input is provided in the command line. Support for basic trigonometric functions such as sin(), cos() and tan(). Multiple equations should be supported.
 
 ## Roles of each member
 
-Idea for the project was given by xxx. xxx1 has been collecting information on different methods of displaying graphs. xxx2 decided the format of input in csv files. xxx has done the programming of the project. It took 12 days to finish the project. All project files have been completed as per xxx’s review.
+Idea for the project was given by Amritpal Singh. Jagraj has been collecting information on different methods of displaying graphs. Manraj Singh decided the format of input command line. Amritpal has done the programming of the project. It took 2 days to finish the project. All project files have been completed as per Amritpal Singh’s review.
 
 ## Reasons for the topic
 
@@ -30,7 +30,7 @@ Graphs have been taught to students as a form of representation of data. The pro
 
 CPU: x86 or x86_64 CPU by INTEL or AMD
 
-RAM: 512 Mb
+RAM: 1 Gb
 
 Disk Space: 1 Gb
 
@@ -38,7 +38,7 @@ Disk Space: 1 Gb
 
 Python: v3.0+
 
-Dependencies: Matplotlib
+Dependencies: Matplotlib, Numpy, regex, math
 
 OS: GNU/Linux or Microsoft Windows
 
@@ -49,7 +49,7 @@ The project itself is written in Python which is inherently slow. Thus the overa
 
 - Equations
 
-Currently the project only supports linear equations, thus satisfying only one type of need. The project needs to support Quadratic Equations, Cubic Equations and so on…
+Currently the project only supports linear, quadratic equations and trigonometric functions. The project needs to support Cubic Equations and multiple equations at once and so on…
 
 ## References
 
@@ -59,4 +59,4 @@ Currently the project only supports linear equations, thus satisfying only one t
 
 - The Internet for queries
 
-- Project source at: https://github.com/icebarf/linear-grapher/
+- Project source at: https://github.com/icebarf/graph-man/
