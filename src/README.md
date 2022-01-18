@@ -118,22 +118,22 @@ Examples:
 > Input: gap = 1
 ```
 
-# Showcase
+## Showcase
 
-- `Input: sin()`
+### `Input: sin()`
 
 ![Sin](../assets/sin.png)
 
-- `Input: scale=5`
-- `Input: base=-5`
-- `Input: 5x^2 + 10x + 15`
+### `Input: scale=5`
+### `Input: base=-5`
+### `Input: 5x^2 + 10x + 15`
 
 ![Curvy-Quad](../assets/curvy_quad.png)
 
-- `Input: cos()`
+### `Input: cos()`
 
 ![Cos](../assets/cos.png)
 
-- `Input: 6x + 7 | 8x -20`
+### `Input: 6x + 7 | 8x -20`
 
 ![two_lines](../assets/two_lines.png)
