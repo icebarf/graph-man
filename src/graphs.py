@@ -50,6 +50,8 @@ The scale for quadratic and linear functions can be configured as following:
 > Input: gap=n
 
 where n is some integer
+
+Visit github for more info: https://github.com/icebarf/graph-man
 """)
 print()
 
@@ -324,18 +326,15 @@ def parse_input(input_string):
     if parsed_str_quadratic is not None:
         digits = separate_eqn_to_digits(input_string)
         digits_new = [lst for lst in digits if bool(lst)]
-        print(digits_new)
         do_quadratic(digits_new, input_string)
 
     if parsed_str_linear is not None:
         digits = separate_eqn_to_digits(input_string)
         digits_new = [lst for lst in digits if bool(lst)]
-        print(digits_new)
         do_linear(digits_new, input_string)
 
     if parsed_str_trig is not None:
-        trig_fun_str = trig_fun(input_string)
-        print(trig_fun_str)
+        trig_fun(input_string)
 
 # Get input from user and parse it
 def get_input():
