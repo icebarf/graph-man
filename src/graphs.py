@@ -25,8 +25,7 @@ def print_input_format():
     print("\twhere a,b,c are any integer values")
 
 def help():
-    print()
-    print("How to use this tool")
+    print("\nHow to use this tool")
     print("This tool supports different types of equations and functions to be plotted")
     print("""
 |__
@@ -67,9 +66,8 @@ The scale for quadratic and linear functions can be configured as following:
 
 where n is some integer
 
-Visit github for more info: https://github.com/icebarf/graph-man
+Visit github for more info: https://github.com/icebarf/graph-man\n
 """)
-print()
 
 def report_bad_format(str):
     print()
@@ -325,7 +323,7 @@ def parse_input(input_string):
     parsed_str_exit         = parser_exit.fullmatch(input_string)
     parsed_str_setting      = parser_settings.fullmatch(input_string)
 
-    if parsed_str_quadratic is None and parsed_str_linear is None and parsed_str_trig is None and parsed_str_help is None and parsed_str_exit is None and parsed_str_setting is None:
+    if all(parsed_str_quadratic, parsed_str_linear, parsed_str_trig, parsed_str_help, parsed_str_exit, parsed_str_setting):
         report_bad_format("Invalid input")
 
     # call respective function based on input string matches
