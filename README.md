@@ -18,13 +18,12 @@ Idea for the project was given by Amritpal Singh. Jagraj has been collecting inf
 
 Graphs have been taught to students as a form of representation of data. The project aims at a programmatic approach towards the same. It helps students visualise these mathematical equations and their trends. This helps them understand graphs and equations without all the manual labour of going through the whole process of plotting graphs of linear equations.
 
-## Goals
+## Features
 
-- To display different equations in the graphical form.
-- Analyze one or more equations graphically and their relation.
-- Display graphs cleanly to envision the mathematical logic.
-- Reduce manual work in producing graphs.
-- Support multiple equations to be plotted.
+- Displays Linear, Quadratic Equations.
+- Plots Trigonometric Functions.
+- Multiple equations in one line.
+- Multi equation graphs are plotted in different colors.
 
 ## Minimum Hardware Specifications
 
@@ -65,3 +64,4 @@ You cannot plot a linear and quadratic or quadratic and trigonometric equations 
 - Class 12 NCERT IP Textbook
 - The Internet for queries
 - Project source at: https://github.com/icebarf/graph-man/
+- Usage instructions at: https://github.com/icebarf/graph-man/tree/main/src
