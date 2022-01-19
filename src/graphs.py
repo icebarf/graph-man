@@ -20,9 +20,7 @@ import math
 import numpy
 
 def print_input_format():
-    print("Quadratic: ax^2 + bx + c")
-    print("Linear: bx +c")
-    print("\twhere a,b,c are any integer values")
+    print("Type 'help' for usage instructions\n")
 
 def help():
     print("\nHow to use this tool")
@@ -70,8 +68,7 @@ Visit github for more info: https://github.com/icebarf/graph-man\n
 """)
 
 def report_bad_format(str):
-    print()
-    print(str,'\nType \'help\' for help')
+    print("\n",str,"\n")
     get_input()
 
 color_table = ["#61afef","#be5046","#98c379","#d19a66","#c678dd","#56b6c2","#abb2bf"]
@@ -96,11 +93,11 @@ def configure(input_string):
     
     if input_string.__contains__("base"):
         base = int(re.search(r'-?\d+', input_string).group())
-        print("Set scale to:",base)
+        print("Set base to:",base)
     
     if input_string.__contains__("gap"):
         gap = int(re.search(r'-?\d+', input_string).group())
-        print("Set scale to:",gap)
+        print("Set gap to:",gap)
 
 
 # Plotting function
@@ -112,7 +109,7 @@ def plot(x,y,input_string):
         matplotlib.pyplot.plot(x,y,color=color_table[-3])
         return
     if input_string == "tan()":
-        matplotlib.pyplot.plot(x,y,color=color_table[-4])
+        matplotlib.pyplot.plot(x,y,color=color_table[2])
         return
     if input_string == "cosec()":
         matplotlib.pyplot.plot(x,y,color=color_table[0])
@@ -121,7 +118,7 @@ def plot(x,y,input_string):
         matplotlib.pyplot.plot(x,y,color=color_table[1])
         return
     if input_string == "cot()":
-        matplotlib.pyplot.plot(x,y,color=color_table[2])
+        matplotlib.pyplot.plot(x,y,color=color_table[-4])
         return
     
     # Plot quadratic or linear equations
@@ -224,25 +221,6 @@ def separate_eqn_to_digits(input_string):
 
     return get_digits_from_str(numbers)
 
-# This function strips away b,c from bx + c type string and stores them in a list
-# Performs same operation as above but does not handle "ax^2"
-def separate_lin_to_digits(input_string):
-    numbers = ""
-    for word in input_string.split():
-        for idx, ch in enumerate(word):
-            if ch == '|':
-                numbers = numbers + str(ch)
-                continue
-            if ch == 'x' or ch == '+':
-                continue
-            numbers = numbers + str(ch)
-
-        if numbers[len(numbers)-1] == '-':
-            continue
-        numbers = numbers + ' '
-
-    return get_digits_from_str(numbers)
-
 
 # Trigonometric Functions and the like
 
@@ -279,7 +257,7 @@ def sec(input_string):
 # Computes x and y values for cot
 def cot(input_string):
     x = numpy.arange(0,4*numpy.pi,0.1)
-    y = numpy.tan(x)
+    y = 1/numpy.tan(x)
     print_graph(x,y,input_string)
 
 # Calls respective trigonometric function based on input
