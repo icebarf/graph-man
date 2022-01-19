@@ -323,7 +323,7 @@ def parse_input(input_string):
     parsed_str_exit         = parser_exit.fullmatch(input_string)
     parsed_str_setting      = parser_settings.fullmatch(input_string)
 
-    if parsed_str_quadratic is None and parsed_str_linear is None and parsed_str_trig is None and parsed_str_help is None and parsed_str_exit is None and parsed_str_setting:
+    if parsed_str_quadratic is None and parsed_str_linear is None and parsed_str_trig is None and parsed_str_help is None and parsed_str_exit is None and parsed_str_setting is None:
         report_bad_format("Invalid input")
 
     # call respective function based on input string matches
