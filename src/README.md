@@ -103,7 +103,7 @@ $ python graphs.py
 
 You can configure the different variable with which the graphs are generated.
 
-- `scale`: maximum value of x (stop)
+- `upper`: maximum value of x (stop)
 - `base` : minimum value of x (start)
 - `gap`  : gap between the base and next value or the `jump` value.
 
@@ -113,7 +113,7 @@ They take integers as the values.
 
 Examples:
 ```sh
-> Input: scale = 5
+> Input: upper = 5
 > Input: base = -5
 > Input: gap = 1
 ```
@@ -124,7 +124,7 @@ Examples:
 
 ![Sin](../assets/sin.png)
 
-### `Input: scale=5`
+### `Input: upper=5`
 ### `Input: base=-5`
 ### `Input: 5x^2 + 10x + 15`
 
